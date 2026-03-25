@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+/* ===== Bloquo Legal Hub – compatibility layer (semantic classes) ===== */
+:root {
+  --bloquo-bg: #F3F7FF;
+  --bloquo-ink: #23436F;
+  --bloquo-muted: #607195;
+  --bloquo-card: rgba(255,255,255,.85);
+  --bloquo-border: rgba(35,67,111,.12);
+  --bloquo-primary: #0055FF;
+}
+
+body{background:var(--bloquo-bg);color:var(--bloquo-ink);margin:0;padding:0}
+.container{width:100%;max-width:1280px;margin:0 auto;padding:0 2rem}
+.hero{margin:3rem 0 2rem;padding:2rem;border-radius:1.5rem;background:rgba(255,255,255,.60);backdrop-filter:blur(12px);border:1px solid var(--bloquo-border)}
+.hero h2{font-size:2.25rem;line-height:1.25;font-weight:700;letter-spacing:-.03em;color:var(--bloquo-ink);margin:0 0 .75rem}
+.hero .meta{color:var(--bloquo-muted);font-size:.9375rem;line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem;margin:2rem 0}
+@media (max-width:900px){.grid{grid-template-columns:1fr}}
+.card{background:var(--bloquo-card);backdrop-filter:blur(12px);border:1px solid var(--bloquo-border);border-radius:1.25rem;padding:1.5rem;transition:all .3s;box-shadow:0 4px 12px rgba(0,0,0,.04)}
+.card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.08)}
+.card h3{font-weight:700;font-size:1.125rem;color:var(--bloquo-ink);margin:.75rem 0 .5rem}
+.card p{color:var(--bloquo-muted);font-size:.9375rem;line-height:1.6;margin:.5rem 0}
+.card a{color:var(--bloquo-primary);font-weight:600;font-size:.9375rem}
+.card a:hover{text-decoration:underline}
+.badge{display:inline-flex;padding:.25rem .625rem;border-radius:6px;background:rgba(0,85,255,.08);color:var(--bloquo-primary);font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.03em}
+.meta{color:var(--bloquo-muted);font-size:.875rem}
+blockquote{margin:1.5rem 0;padding:1.25rem 1.5rem;border-left:3px solid var(--bloquo-primary);background:rgba(0,85,255,.04);border-radius:.75rem;font-size:.9375rem}
+hr{border:0;border-top:1px solid var(--bloquo-border);margin:2rem 0}
+.footer{margin:4rem 0 2rem;padding:2rem 0;border-top:1px solid var(--bloquo-border);color:var(--bloquo-muted);font-size:.875rem;text-align:center}
+.footer a{color:var(--bloquo-primary);font-weight:600}
+.toc{margin:.75rem 0;padding-left:0;list-style:none}
+.toc li{margin:.5rem 0}
+.toc a{color:var(--bloquo-ink);font-weight:500;opacity:.85}
+.toc a:hover{color:var(--bloquo-primary);opacity:1}
+
+/* ===== Document / Legal page content ===== */
+section{
+  margin:2rem 0 3rem;
+  padding:2.5rem 3rem;
+  border-radius:1.5rem;
+  background:rgba(255,255,255,.72);
+  backdrop-filter:blur(14px);
+  border:1.5px solid var(--bloquo-border);
+  max-width:900px;
+}
+section h2{
+  font-size:1.875rem;
+  font-weight:700;
+  letter-spacing:-.025em;
+  color:var(--bloquo-ink);
+  margin:0 0 .35rem;
+  line-height:1.2;
+}
+section h3{
+  font-size:1.0625rem;
+  font-weight:700;
+  color:var(--bloquo-ink);
+  margin:2rem 0 .6rem;
+  padding-bottom:.4rem;
+  border-bottom:1px solid var(--bloquo-border);
+  letter-spacing:-.01em;
+}
+section h3:first-of-type{margin-top:1.5rem}
+section p{
+  color:var(--bloquo-muted);
+  font-size:.9375rem;
+  line-height:1.75;
+  margin:.6rem 0;
+}
+section p a,section li a{color:var(--bloquo-primary);font-weight:600}
+section p a:hover,section li a:hover{text-decoration:underline}
+section ul{
+  margin:.5rem 0 1rem 0;
+  padding-left:1.25rem;
+  list-style:none;
+}
+section ul li{
+  position:relative;
+  padding-left:1.375rem;
+  color:var(--bloquo-muted);
+  font-size:.9375rem;
+  line-height:1.7;
+  margin:.45rem 0;
+}
+section ul li::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:.62em;
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:var(--bloquo-primary);
+  opacity:.7;
+}
+section strong{color:var(--bloquo-ink)}
+@media(max-width:700px){section{padding:1.5rem 1.25rem;border-radius:1rem}}
+
+body{font-family:ui-sans-serif,system-ui,sans-serif;background:var(--bloquo-bg);margin:0;padding:0}
+*{box-sizing:border-box}
+</style>
+</head>
+<body>
+<div class="container" style="padding-top:2rem">
+<section>
+  <h2>Termos e Condições de Uso</h2>
+  <p class=meta>Versão 1.0 — Vigência a partir de 17/03/2026 · BGX Serviços Digitais Ltda. (CNPJ 52.830.419/0001-74)</p>
+  <p>Estes Termos regulam a prestação de Serviços de Intermediação de Ativos Virtuais pela <strong>BLOQUO</strong> (BGX Serviços Digitais Ltda.), PSAV em processo de autorização junto ao Banco Central do Brasil, na modalidade de <strong>intermediação de ativos virtuais</strong>, incluindo serviços de câmbio associados.</p>
+  <p>Ao acessar a Plataforma BLOQUO e/ou utilizar quaisquer Serviços, você declara ter lido, compreendido e aceito integralmente este instrumento.</p>
+
+  <h3>1. Objeto dos Serviços</h3>
+  <p>A BLOQUO presta serviços de:</p>
+  <ul>
+    <li>Intermediação de compra, venda e troca de Ativos Virtuais;</li>
+    <li>Pagamento ou transferência internacional com Ativos Virtuais, nos limites do Banco Central do Brasil;</li>
+    <li>Transferência de Ativo Virtual de ou para carteira autocustodiada;</li>
+    <li>Intermediação de compra, venda ou troca de Ativos Virtuais referenciados em moeda fiduciária (stablecoins);</li>
+    <li>Atuação como provedora de liquidez de Ativos Virtuais.</li>
+  </ul>
+
+  <h3>2. Elegibilidade e Cadastro</h3>
+  <p>Para utilizar os Serviços, o cliente deve:</p>
+  <ul>
+    <li>Ser pessoa física maior de 18 anos ou pessoa jurídica com capacidade legal para contratar;</li>
+    <li>Não residir ou estar constituído em jurisdição proibida pelo Banco Central do Brasil ou outras autoridades competentes;</li>
+    <li>Não exercer atividades proibidas ou ilícitas;</li>
+    <li>Fornecer informações corretas, completas e atualizadas durante o cadastro e manter seus dados sempre atualizados.</li>
+  </ul>
+
+  <h3>3. Principais Obrigações da BLOQUO</h3>
+  <p>A BLOQUO se compromete a:</p>
+  <ul>
+    <li>Liquidar operações contratadas nos prazos e condições previamente pactuados;</li>
+    <li>Cumprir a legislação aplicável às PSAVs, incluindo Lei nº 14.478/2022, Decreto nº 11.563/2023, Resoluções BCB nº 277/2022, 520/2025 e 521/2025, Lei nº 9.613/1998 (PLD) e Lei nº 13.709/2018 (LGPD);</li>
+    <li>Manter segregação patrimonial entre recursos próprios e de clientes;</li>
+    <li>Adotar procedimentos de PLD/FT/FP, incluindo due diligence, monitoramento contínuo e reporte ao COAF;</li>
+    <li>Implementar conformidade com sanções internacionais (ONU, OFAC, BCB/COAF) e bloquear transações com pessoas, entidades ou jurisdições sancionadas quando exigido;</li>
+    <li>Assegurar a confidencialidade, integridade e segurança dos dados e registros das operações;</li>
+    <li>Comunicar alterações relevantes em Termos, políticas e condições de uso.</li>
+  </ul>
+
+  <h3>4. Prerrogativas da BLOQUO</h3>
+  <p>A BLOQUO poderá, a seu critério ou por determinação legal ou regulatória:</p>
+  <ul>
+    <li>Solicitar documentos e informações adicionais para fins de compliance e reporte;</li>
+    <li>Recusar ou suspender operações com indícios de fraude, ilicitude ou descumprimento de limites;</li>
+    <li>Interromper temporariamente os Serviços por manutenção, força maior ou segurança;</li>
+    <li>Encerrar a relação contratual em caso de descumprimento dos Termos ou por determinação de autoridade competente;</li>
+    <li>Aceitar exclusivamente pagamentos via transferências bancárias ou meios expressamente autorizados pelo Banco Central do Brasil.</li>
+  </ul>
+
+  <h3>5. Direitos dos Clientes</h3>
+  <ul>
+    <li>Acesso à plataforma e Serviços, observados critérios de elegibilidade e limites operacionais;</li>
+    <li>Segregação contábil e patrimonial de seus ativos;</li>
+    <li>Acesso a informações sobre operações, posições, saldos e histórico transacional;</li>
+    <li>Informações claras sobre riscos, taxas e alterações relevantes nos Termos;</li>
+    <li>Solicitar encerramento de conta, desde que não existam obrigações pendentes.</li>
+  </ul>
+
+  <h3>6. Obrigações do Cliente</h3>
+  <ul>
+    <li>Fornecer informações verdadeiras, completas e atualizadas, inclusive para fins de KYC e classificação de operações cambiais;</li>
+    <li>Não utilizar a Plataforma para fins ilícitos, fraudulentos ou em desacordo com a regulamentação;</li>
+    <li>Manter a confidencialidade de credenciais, chaves privadas e meios de acesso;</li>
+    <li>Pagar pontualmente todas as tarifas e valores devidos;</li>
+    <li>Responsabilizar-se integralmente pelas operações realizadas por Operadores Autorizados designados.</li>
+  </ul>
+
+  <h3>7. Travel Rule</h3>
+  <p>Transferências internacionais de ativos virtuais realizadas pela Plataforma estão sujeitas à <strong>Travel Rule</strong> (padrão FATF). O cliente deve fornecer, de forma completa e precisa, as informações do beneficiário, endereço de carteira de destino e finalidade lícita da transferência. A BLOQUO poderá rejeitar transferências que não atendam aos requisitos regulatórios ou apresentem inconsistências.</p>
+
+  <h3>8. Proteção de Dados Pessoais (LGPD)</h3>
+  <p>A BLOQUO coleta e trata dados pessoais com base nas hipóteses legais da Lei nº 13.709/2018 (LGPD): cumprimento de obrigação legal ou regulatória, execução destes Termos e legítimo interesse para fins de segurança e prevenção a fraudes. Os dados serão retidos pelo prazo necessário ao cumprimento das finalidades e obrigações legais.</p>
+  <p>O cliente poderá exercer seus direitos de titular (acesso, correção, portabilidade, eliminação) pelo canal: <a href="mailto:help@bloquo.io">help@bloquo.io</a>.</p>
+
+  <h3>9. Limitação de Responsabilidade</h3>
+  <p>Os Serviços da BLOQUO não são cobertos por fundos garantidores ou seguros. A BLOQUO não é responsável por perdas decorrentes de variações de mercado, atos de terceiros, falhas de infraestrutura externa ou uso indevido de credenciais pelo cliente. Em nenhuma hipótese a BLOQUO será responsável por lucros cessantes, perdas indiretas ou danos reputacionais, salvo exigência expressa de lei.</p>
+
+  <h3>10. Propriedade Intelectual</h3>
+  <p>A Plataforma BLOQUO e todos os seus elementos são de titularidade exclusiva da BLOQUO. É vedado reproduzir, modificar, realizar engenharia reversa ou explorar comercialmente qualquer componente da Plataforma sem autorização expressa prévia.</p>
+
+  <h3>11. Encerramento da Relação Contratual</h3>
+  <p>Qualquer parte poderá encerrar o relacionamento mediante aviso prévio de 30 dias. A BLOQUO poderá encerrar imediatamente, sem aviso prévio, em caso de: descumprimento dos Termos; fornecimento de informações falsas; suspeita ou comprovação de atividades ilícitas; determinação de autoridade competente; ou pedido de recuperação judicial/falência do cliente. O encerramento efetivo ocorre somente após liquidação integral de todas as obrigações pendentes.</p>
+
+  <h3>12. Legislação Aplicável e Foro</h3>
+  <p>Estes Termos são regidos pelas leis da <strong>República Federativa do Brasil</strong>. Fica eleito o Foro da Comarca de <strong>São Paulo/SP</strong> para dirimir quaisquer controvérsias.</p>
+
+  <h3>13. Contato</h3>
+  <p>Canal oficial: <a href="mailto:help@bloquo.io">help@bloquo.io</a> · Av. Brigadeiro Faria Lima, nº 1811, sala 1119, Jardim Paulistano, São Paulo/SP.</p>
+</section>
+</div>
+</body>
+</html>
