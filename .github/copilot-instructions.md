@@ -19,6 +19,7 @@ Use this context to judge whether the diff correctly and safely implements what 
 
 ## Scope Constraint
 
+- Files under `spec/**` are **read-only context** — use them to understand intent and acceptance criteria, but never comment on or suggest changes to them.
 - Review **only** lines that were added or modified in the diff.
 - Do not comment on unchanged code unless it creates a direct security or correctness risk when combined with the new changes.
 - Do not suggest style improvements, refactors, naming changes, or performance optimizations.
